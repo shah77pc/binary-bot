@@ -18,7 +18,7 @@ def login(verbose = False, iq = None, checkConnection = False):
 
     if iq == None:
       print("Trying to connect to IqOption")
-      iq=IQ_Option('USERNAME','PASSWORD') # YOU HAVE TO ADD YOUR USERNAME AND PASSWORD
+      iq=IQ_Option('jaz.7251989@gmail.com','137713471342aA') # YOU HAVE TO ADD YOUR USERNAME AND PASSWORD
       iq.connect()
 
     if iq != None:
@@ -40,7 +40,7 @@ def login(verbose = False, iq = None, checkConnection = False):
 
 def higher(iq,Money,Actives):
     
-    done,id = iq.buy(Money,Actives,"call",1)
+    done,id = iq.buy(Money,Actives,"call",15)
     
     if not done:
         print('Error call')
@@ -52,7 +52,7 @@ def higher(iq,Money,Actives):
 
 def lower(iq,Money,Actives):
     
-    done,id = iq.buy(Money,Actives,"put",1)
+    done,id = iq.buy(Money,Actives,"put",15)
     
     if not done:
         print('Error put')
