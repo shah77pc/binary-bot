@@ -165,7 +165,7 @@ while(1):
             i = i + 1
 
         if trade:
-            time.sleep(2)
+            time.sleep(1250)
             
             #print(datetime.datetime.now().second)
             
@@ -185,7 +185,7 @@ while(1):
                 #print(f'Balance : {get_balance(iq)}')
                 bet_money = 1
                 
-            elif win == ['lose']:
+            elif win == ['loose']:
                 #print(f'Balance : {get_balance(iq)}')
                 bet_money = bet_money * martingale # martingale V3
                 
