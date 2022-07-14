@@ -118,7 +118,7 @@ else:
     martingale = sys.argv[3]
     
 SEQ_LEN = 5  # how long of a preceeding sequence to collect for RNN, if you modify here, remember to modify in the other files too
-FUTURE_PERIOD_PREDICT = 2  # how far into the future are we trying to predict , if you modify here, remember to modify in the other files too
+FUTURE_PERIOD_PREDICT = 15  # how far into the future are we trying to predict , if you modify here, remember to modify in the other files too
 
 
 
