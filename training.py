@@ -23,7 +23,7 @@ except Exception as e:
   print(e)
 
 SEQ_LEN = 5 # how long
-FUTURE_PERIOD_PREDICT = 2  # how far into the future are we trying to predict
+FUTURE_PERIOD_PREDICT = 15  # how far into the future are we trying to predict
 
 def classify(current,future):
     if float(future) > float(current):
